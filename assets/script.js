@@ -6,9 +6,9 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
     //asking for length
-	var length = prompt(
+	var length = Number(prompt(
 		"How many characters would you like your password to contain?"
-	);
+	));
 
 	if (length > 8 && length < 128) {
         //asking for character types
@@ -21,6 +21,7 @@ function writePassword() {
         if(special) {
             charSet = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
         }
+        
 
 
 
@@ -29,7 +30,8 @@ function writePassword() {
 
 
 
-	} else if (length < 8 || length > 128) {
+
+	 else if (length < 8 || length > 128) {
 		alert("Please choose a number between 8 and 128!");
 	} else {
 		alert("Please choose a number between 8 and 128!");
@@ -43,13 +45,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-/*function generatePassword() {
-    var length = 8,
-        charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
-        retVal = "";
-    for (var i = 0, n = charset.length; i < length; ++i) {
-        retVal += charset.charAt(Math.floor(Math.random() * n));
-    }
-    return retVal;
-} */
