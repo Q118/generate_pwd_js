@@ -30,26 +30,24 @@ function writePassword() {
         if(upperCase) {
             charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         }
-        
+
+    //returning generated password
+    var password = "";
+    for (var i =0; i < length; i++) {
+        //picking a character with-in charSet at index of random number, adding characters until  gets up to amount user inputted.
+        password = password + charSet.charAt(Math.floor(Math.random() * charSet.length));
+    }
 
 
 
 
-
-
-
-
-
-	 else if (length < 8 || length > 128) {
-		alert("Please choose a number between 8 and 128!");
 	} else {
 		alert("Please choose a number between 8 and 128!");
 	}
 
-	//var password = generatePassword();
-	//var passwordText = document.querySelector("#password");
+	var passwordText = document.querySelector("#password");
 
-	//passwordText.value = password;
+	passwordText.value = password;
 }
 
 // Add event listener to generate button
