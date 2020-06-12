@@ -6,15 +6,25 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
 var length = prompt("How many characters would you like your password to contain?");
 
-var special = confirm("Click OK to include special characters.");
+
+
+if (length > 8 && length < 128) {
+    var special = confirm("Click OK to include special characters.");
 
 var numeric = confirm("Click OK to include numeric characters.");
 
 var lowerCase = confirm("Click OK to include lower-case characters.");
 
 var upperCase = confirm("Click OK to include upper-case characters.");
+}
+else if (length < 8 || length > 128) {
+    alert("Please choose a number between 8 and 128!");
+}
+else {
+    alert("Please choose a number between 8 and 128!");
+}
 
-if (length > 8 && length < 
+
 //var password = generatePassword();
 //var passwordText = document.querySelector("#password");
 
