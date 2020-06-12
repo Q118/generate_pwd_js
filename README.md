@@ -44,8 +44,9 @@
 
 ## Usage
     The following image demonstrates the application functionality:
+        View screenshot: https://github.com/Q118/generate_pwd_js/blob/master/assets/03-javascript-homework-demo.png
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
+
 
 ## Credits
     https://stackoverflow.com/questions/59504465/generate-random-password-based-on-user-input-in-javascript
