@@ -5,7 +5,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-    //asking for length
+    //asking for length, adding Number b/c prompt returns a string and this will make it a number.
 	var length = Number(prompt(
 		"How many characters would you like your password to contain?"
 	));
@@ -20,6 +20,15 @@ function writePassword() {
         var charSet = "";
         if(special) {
             charSet = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+        }
+        if(numeric) {
+            charSet = "0123456789";
+        }
+        if(lowerCase) {
+            charSet = "abcdefghijklmnopqrstuvwxyz";
+        }
+        if(upperCase) {
+            charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         }
         
 
