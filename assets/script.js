@@ -1,6 +1,6 @@
 /** @format */
 
-// Assignment Code
+// Assignment Code to the generate button
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
@@ -24,7 +24,7 @@ function writePassword() {
 		} else if (special && numeric && lowerCase) {
 			charSet =
 				" !\"#$%&'()*+,-./:;<=>?@[]^_`{|}~0123456789abcdefghijklmnopqrstuvwxyz";
-		} else if (special && numeric && UpperCase) {
+		} else if (special && numeric && upperCase) {
 			charSet =
 				" !\"#$%&'()*+,-./:;<=>?@[]^_`{|}~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		} else if (special && lowerCase && upperCase) {

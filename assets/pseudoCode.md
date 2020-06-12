@@ -38,17 +38,5 @@ ELSE
   ALERT password length error message
 END IF
 
-var compGuess = solutions[Math.floor(Math.random() * solutions.length)];   FOR HW
+create all the combinations of user inputs with else if statements to select assignment of generated password
 
-
-var generator = require('generate-password');
-
-var password = generator.generate({
-    length: 10,
-    numbers: true
-});
-
-// 'uEyMTw32v9'
-console.log(password);
-
-reference: https://stackoverflow.com/questions/59504465/generate-random-password-based-on-user-input-in-javascript
